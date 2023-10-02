@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for red-colored validation messages */
+        .invalid-feedback {
+            color: red;
+        }
+        .container{
+            background-color:beige;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 30%;" class="container mt-5">
+        <h2>Login page</h2>
+        <form class="was-validated">
+            <div class="mb-2">
+              <label for="validationTextarea" class="form-label">Name</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Enter your name" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a Name.
+              </div>
+            </div>
+            <div class="mb-2">
+                <label for="validationTextarea" class="form-label">Email</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Enter your Email" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter Email.
+                </div>
+              </div>
+            <div class="mb-2">
+                <label for="validationTextarea" class="form-label">Password</label>
+                <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Enter your password" required></textarea>
+                <div class="invalid-feedback">
+                  Please enter valid password.
+                </div>
+              </div>
+          
+            <div class="mb-3">
+              <button style="background-color: rgb(255, 68, 130);"  class="btn btn-primary" type="submit" disabled>Submit form</button>
+            </div>
+          </form>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery scripts for form validation -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
